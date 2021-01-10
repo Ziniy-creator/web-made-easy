@@ -6,7 +6,7 @@
     <title>Monargo - Grid
     </title>
 
-    <link rel="stylesheet" type="text/css" href="style.css"/> <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/> <!-- css link -->
 </head>
 <body>
 
