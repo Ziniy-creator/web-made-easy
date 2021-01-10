@@ -6,6 +6,8 @@ Der vil muligvis blive lagt youtube guides op som forklarer alle kommentarer 1 e
 
 Der tages forbehold for stavefejl
 
+Husk, INGEN BOOTSTRAP YOU CAN DO IT
+
 Mvh Bjarke Hansen
 
 Vuknet I/S
