@@ -47,27 +47,27 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    
   }
-
-  ul{
+  
+  ul {
       display: flex;
       justify-content: space-around;
       width: 50vw;
   }
-
-  li{
+  
+  li {
       list-style: none;
   }
-
-  ul li a{
+  
+  ul li a {
       color: darkblue;
       text-decoration: none;
   }
-  ul li a:hover{
-    color: red;
-    text-decoration: none;
-}
+  
+  ul li a:hover {
+      color: red;
+      text-decoration: none;
+  }
   /* grid-area: main = grid-template-areas: "main main main main" dvs main  fylder den del der er template area som passer sammen med grid-area */
   
   main {
@@ -151,18 +151,17 @@
       border-radius: var(--main-radius);
       padding-top: var(--main-padding);
   }
-
-
-  footer a{
+  
+  footer a {
       color: darkgoldenrod;
       font-size: xx-large;
   }
-
-  footer a:hover{
-    color: red;
-    font-size: xx-large;
-    background-color: blue;
-}
+  
+  footer a:hover {
+      color: red;
+      font-size: xx-large;
+      background-color: blue;
+  }
   /* media only screen and max-width: 768 px, bestemmer hvordan række følgen er på enheder der er 768px bred eller derunder */
   
   @media only screen and (max-width: 768px) {
