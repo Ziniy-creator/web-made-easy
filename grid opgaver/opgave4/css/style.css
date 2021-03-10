@@ -1,22 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth ;
+    scroll-behavior: smooth;
 }
 
-#container{
+#container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: "box1 box2 box3" "box4 box5 box6";
-    height: 70vh;
+    height: 100%;
     row-gap: 20px;
     column-gap: 60px;
+    background-color: #f3f7dc;
 }
 
-
-#box1{
+#box1 {
     grid-area: box1;
     border: 2px solid darkcyan;
     display: grid;
@@ -25,7 +25,7 @@
     grid-template-areas: "overskrift overskrift2" "billede1 billede2" "contents contents2" "footercontents footercontents2";
 }
 
-.overskrift{
+.overskrift {
     grid-area: overskrift;
     background-color: #006493;
     color: white;
@@ -36,7 +36,7 @@
     padding: 10px;
 }
 
-.overskrift2{
+.overskrift2 {
     grid-area: overskrift2;
     background-color: #006493;
     color: white;
@@ -47,7 +47,7 @@
     padding: 10px;
 }
 
-.billede1{
+.billede1 {
     grid-area: billede1;
     border: 2px solid darkcyan;
     background-image: url("/grid\ opgaver/opgave4/images/pic1.png");
@@ -56,7 +56,7 @@
     background-position: right;
 }
 
-.billede2{
+.billede2 {
     grid-area: billede2;
     border: 2px solid darkcyan;
     background-image: url("/grid\ opgaver/opgave4/images/pic2.png");
@@ -65,7 +65,25 @@
     background-position: right;
 }
 
-.contents{
+.billede3 {
+    grid-area: billede3;
+    border: 2px solid darkcyan;
+    background-image: url("/grid\ opgaver/opgave4/images/pic3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.billede4 {
+    grid-area: billede4;
+    border: 2px solid darkcyan;
+    background-image: url("/grid\ opgaver/opgave4/images/pic4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.contents {
     grid-area: contents;
     border: 2px solid darkcyan;
     display: flex;
@@ -73,15 +91,16 @@
     padding: 10px;
 }
 
-.footercontents{
+.footercontents {
     grid-area: footercontents;
     border: 2px solid darkcyan;
     display: flex;
     align-items: center;
     padding: 10px;
+    background-color: #ace0d4;
 }
 
-.contents2{
+.contents2 {
     grid-area: contents2;
     border: 2px solid darkcyan;
     display: flex;
@@ -89,31 +108,56 @@
     padding: 10px;
 }
 
-.footercontents2{
+.footercontents2 {
     grid-area: footercontents2;
     border: 2px solid darkcyan;
     display: flex;
     align-items: center;
     padding: 10px;
+    background-color: #ace0d4;
 }
 
-#box2{
+#box2 {
     grid-area: box2;
+    border: 2px solid darkcyan;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "overskrift overskrift2" "billede2 billede3" "contents contents2" "footercontents footercontents2";
 }
 
-#box3{
+#box3 {
     grid-area: box3;
+    border: 2px solid darkcyan;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "overskrift overskrift2" "billede3 billede1" "contents contents2" "footercontents footercontents2";
 }
 
-#box4{
+#box4 {
     grid-area: box4;
+    border: 2px solid darkcyan;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "overskrift overskrift2" "billede4 billede1" "contents contents2" "footercontents footercontents2";
 }
 
-#box5{
+#box5 {
     grid-area: box5;
+    border: 2px solid darkcyan;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "overskrift overskrift2" "billede1 billede3" "contents contents2" "footercontents footercontents2";
 }
 
-#box6{
+#box6 {
     grid-area: box6;
-
+    border: 2px solid darkcyan;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "overskrift overskrift2" "billede3 billede4" "contents contents2" "footercontents footercontents2";
 }
