@@ -44,3 +44,28 @@ div {
     grid-area: image;
     background-color: cadetblue;
 }
+
+
+@media screen and (max-width: 768px){
+
+    section {
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 5fr 5fr 1fr 1fr;
+    grid-template-areas: "header header header header" "hero hero hero hero" "menu main main main" "menu banner banner banner" "menu extra extra image";
+    }
+
+}
+
+
+@media screen and (max-width: 450px){
+
+    section {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+        grid-template-areas: "header" "menu" "hero" "main" "banner" "extra" "image";
+        }
+
+
+}
