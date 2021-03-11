@@ -1,31 +1,46 @@
-@charset "UTF-8";
-/* CSS Document */
-
-.box1{grid-area: header;}
-.box2{grid-area: menu;}
-.box3{grid-area: main;}
-.box4{grid-area: right;}
-.box5{grid-area: footer;}
-section{
-	display: grid;
-	grid-gap: 1em;
-	grid-auto-rows: minmax(100px, auto);
-	grid-template-areas:
-		'header header header'
-		' . main right' 
-		'menu footer footer';
+section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 5fr 1fr 1fr 1fr;
+    grid-template-areas: "header menu menu menu" "hero hero hero hero" "main main . image" "main main . extra" "banner banner banner banner";
 }
 
-div{
-	background-color: brown;
-	color: white;
-	padding: 20px;
+div {
+    color: #fff;
 }
 
+.box1 {
+    grid-area: header;
+    background-color: black;
+}
 
-@media (max-width: 567px){
-	section{
-		grid-template-areas:'header header'
-		'menu menu' 'main right' 'footer footer';
-	}
+.box2 {
+    grid-area: menu;
+    background-color: crimson;
+}
+
+.box3 {
+    grid-area: main;
+    background-color: darkblue;
+}
+
+.box4 {
+    grid-area: hero;
+    background-color: blue;
+}
+
+.box5 {
+    grid-area: banner;
+    background-color: orange;
+}
+
+.box6 {
+    grid-area: extra;
+    background-color: chartreuse;
+}
+
+.box7 {
+    grid-area: image;
+    background-color: cadetblue;
 }
