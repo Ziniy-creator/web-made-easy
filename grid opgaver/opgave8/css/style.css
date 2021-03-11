@@ -2,70 +2,156 @@ section {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 5fr 1fr 1fr 1fr;
-    grid-template-areas: "header menu menu menu" "hero hero hero hero" "main main . image" "main main . extra" "banner banner banner banner";
+    grid-template-rows: 2fr 50fr 8fr 4fr 4fr 2fr 5fr 2.5fr;
+    grid-template-areas: "menu menu menu menu"
+     "header header header header" 
+     "main main main main" 
+     "gallerybig gallerybig gallerysmall1 gallerysmall2" 
+     "gallerybig gallerybig gallerysmall3 gallerysmall4"
+     "live live live live"
+     "live1 live2 live3 live4"
+     "footer footer footer footer";
 }
+
+body{
+    padding: 0; 
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+    width: 40%;
+    padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding:10px;
+}
+
+a:nth-last-child(1){
+    color: black;
+    background-color: white;
+}
+
+#logo{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 div {
     color: #fff;
 }
 
+#textboks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#textboks>h2{
+    font-size: 36px;
+    font-weight: 550;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
 .box1 {
     grid-area: header;
     background-color: black;
+    background-image: url("/grid\ opgaver/opgave8/images/grid-6.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center, top;
 }
 
 .box2 {
-    grid-area: menu;
+    grid-area: main;
     background-color: crimson;
 }
 
 .box3 {
-    grid-area: main;
-    background-color: darkblue;
+    grid-area: menu;
+    background-color: #9DC7D3;
 }
 
 .box4 {
-    grid-area: hero;
+    grid-area: gallerybig;
     background-color: blue;
 }
 
 .box5 {
-    grid-area: banner;
+    grid-area: gallerysmall1;
     background-color: orange;
 }
 
 .box6 {
-    grid-area: extra;
+    grid-area: gallerysmall2;
     background-color: chartreuse;
 }
 
 .box7 {
-    grid-area: image;
+    grid-area: gallerysmall3;
     background-color: cadetblue;
 }
 
-
-@media screen and (max-width: 768px){
-
-    section {
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 5fr 5fr 1fr 1fr;
-    grid-template-areas: "header header header header" "hero hero hero hero" "menu main main main" "menu banner banner banner" "menu extra extra image";
-    }
-
+.box8 {
+    grid-area: gallerysmall4;
+    background-color: cadetblue;
 }
 
+.box9{
+    grid-area: live;
+    background-color: grey;
+}
 
-@media screen and (max-width: 450px){
+.box10{
+    grid-area: live1;
+    background-color: burlywood;
+    box-shadow: crimson;
+}
 
-    section {
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
-        grid-template-areas: "header" "menu" "hero" "main" "banner" "extra" "image";
-        }
+.box11{
+    grid-area: live2;
+    background-color: burlywood;
+    box-shadow: crimson;
+}
 
+.box12{
+    grid-area: live3;
+    background-color: burlywood;
+    box-shadow: crimson;
+}
 
+.box13{
+    grid-area: live4;
+    background-color: burlywood;
+    box-shadow: crimson;
+}
+
+.box14{
+    grid-area: footer;
+    background-color: darkgreen;
 }
