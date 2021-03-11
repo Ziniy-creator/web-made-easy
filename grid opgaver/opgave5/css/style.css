@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    background-color: red;
+}
+
+#gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 6fr 1.5fr;
+    grid-template-areas: "nav nav nav" "header header header" "box1 box2 box3" "box4 box5 box6" "footer footer footer";
+    row-gap: 5px;
+    column-gap: 5px;
+
+}
+
+nav{
+    background-color: white;
+    grid-area: nav;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+header{
+    grid-area: header;
+    color: white;
+    background-color: red;
+    display: flex;
+    width: 100%;
+
+}
+
+header>h1{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+header>p{
+    font-size: 18px;
+    color: white;    
+}
+
+
+#logo{
+    background-image: url("/grid\ opgaver/opgave5/images/logo.png");
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+#box1{
+    grid-area: box1;
+ 
+}
+
+h2{
+    color: white;
+}
+
+#box2{
+    grid-area: box2;
+   
+}
+
+#box3{
+    grid-area: box3;
+  
+}
+
+#box4{
+    grid-area: box4;
+  
+}
+
+#box5{
+    grid-area: box5;
+   
+}
+
+#box6{
+    grid-area: box6;
+    
+}
