@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.box1{grid-area: header;}
+.box2{grid-area: menu;}
+.box3{grid-area: main;}
+.box4{grid-area: right;}
+.box5{grid-area: footer;}
+section{
+	display: grid;
+	grid-gap: 1em;
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+		'header header header'
+		' . main right' 
+		'menu footer footer';
+}
+
+div{
+	background-color: brown;
+	color: white;
+	padding: 20px;
+}
+
+
+@media (max-width: 567px){
+	section{
+		grid-template-areas:'header header'
+		'menu menu' 'main right' 'footer footer';
+	}
+}
