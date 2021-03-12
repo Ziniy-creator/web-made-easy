@@ -1,8 +1,8 @@
 section {
     display: grid;
-    height: 100vh;
+    height: 200vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 50fr 8fr 4fr 4fr 2fr 5fr 2.5fr;
+    grid-template-rows: 2fr 50fr 48fr 4fr 4fr 2fr 5fr 2.5fr;
     grid-template-areas: "menu menu menu menu"
      "header header header header" 
      "main main main main" 
@@ -89,7 +89,31 @@ div {
 
 .box2 {
     grid-area: main;
-    background-color: crimson;
+    width: 100%;
+    height: 100%;
+
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+#mainbillede{
+    background-image:url("/grid\ opgaver/opgave8/images/background3.jpg");
+    background-repeat: no-repeat;
+    background-color:#fff;
+    background-size: 100%;
+    background-position: center;
+    height: 80%;
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box3 {
