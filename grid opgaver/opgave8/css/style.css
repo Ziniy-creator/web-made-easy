@@ -2,23 +2,27 @@ section {
     display: grid;
     height: 200vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 50fr 48fr 4fr 4fr 2fr 5fr 2.5fr;
-    grid-template-areas: "menu menu menu menu"
-     "header header header header" 
-     "main main main main" 
-     "gallerybig gallerybig gallerysmall1 gallerysmall2" 
-     "gallerybig gallerybig gallerysmall3 gallerysmall4"
-     "live live live live"
-     "live1 live2 live3 live4"
-     "footer footer footer footer";
+    grid-template-rows: 2fr 50fr 48fr 30fr 30fr 10fr 40fr 15fr;
+    grid-template-areas: "menu menu menu menu" "header header header header" "main main main main" "gallerycontainer gallerycontainer gallerycontainer gallerycontainer" "gallerycontainer gallerycontainer gallerycontainer gallerycontainer" "live live live live" "livegrid livegrid livegrid livegrid" "footer footer footer footer";
 }
 
-body{
-    padding: 0; 
+#gallerycontainer {
+    grid-area: gallerycontainer;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas: "gallerybig gallerybig gallerysmall1 gallerysmall2" "gallerybig gallerybig gallerysmall3 gallerysmall4";
+}
+
+body {
+    padding: 0;
     margin: 0 auto;
+    max-width: 1400px;
 }
 
-ul{
+ul {
     list-style: none;
     width: 40%;
     padding-right: 25px;
@@ -26,22 +30,22 @@ ul{
     justify-content: flex-end;
 }
 
-li{
+li {
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
-    padding:10px;
+    padding: 10px;
 }
 
-a:nth-last-child(1){
+a:nth-last-child(1) {
     color: black;
     background-color: white;
 }
 
-#logo{
+#logo {
     width: 60%;
     display: flex;
     align-items: center;
@@ -50,19 +54,18 @@ a:nth-last-child(1){
     padding-bottom: 10px;
 }
 
-nav{
+nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-
 div {
     color: #fff;
 }
 
-#textboks{
+#textboks {
     width: 100%;
     height: 100%;
     display: flex;
@@ -70,13 +73,11 @@ div {
     align-items: center;
 }
 
-
-#textboks>h2{
+#textboks>h2 {
     font-size: 36px;
     font-weight: 550;
     font-family: 'Courier New', Courier, monospace;
 }
-
 
 .box1 {
     grid-area: header;
@@ -91,22 +92,19 @@ div {
     grid-area: main;
     width: 100%;
     height: 100%;
-
 }
 
-#main{
+#main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-
-
 }
 
-#mainbillede{
-    background-image:url("/grid\ opgaver/opgave8/images/background3.jpg");
+#mainbillede {
+    background-image: url("/grid\ opgaver/opgave8/images/background3.jpg");
     background-repeat: no-repeat;
-    background-color:#fff;
+    background-color: #fff;
     background-size: 100%;
     background-position: center;
     height: 80%;
@@ -123,59 +121,106 @@ div {
 
 .box4 {
     grid-area: gallerybig;
-    background-color: blue;
+    background-image: url("/grid\ opgaver/opgave8/images/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .box5 {
     grid-area: gallerysmall1;
-    background-color: orange;
+    background-image: url("/grid\ opgaver/opgave8/images/img2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .box6 {
     grid-area: gallerysmall2;
-    background-color: chartreuse;
+    background-image: url("/grid\ opgaver/opgave8/images/img3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .box7 {
     grid-area: gallerysmall3;
-    background-color: cadetblue;
+    background-image: url("/grid\ opgaver/opgave8/images/img4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .box8 {
     grid-area: gallerysmall4;
-    background-color: cadetblue;
+    background-image: url("/grid\ opgaver/opgave8/images/img5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.box9{
+.box9 {
     grid-area: live;
     background-color: grey;
 }
 
-.box10{
-    grid-area: live1;
-    background-color: burlywood;
-    box-shadow: crimson;
+#live {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.box11{
+#live>h2 {
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 650;
+}
+
+.box10 {
+    grid-area: livegrid;
+    display: grid;
+    /*  grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 1fr;
+    grid-template-areas: ". live2 live3 live4 live5 .";
+    grid-auto-columns: 1.2fr;
+    grid-column-gap: 25px;
+    row-gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.box11 {
     grid-area: live2;
     background-color: burlywood;
-    box-shadow: crimson;
+    box-shadow: 0px 3px 8px rgb(100, 100, 100);
 }
 
-.box12{
+.box12 {
     grid-area: live3;
     background-color: burlywood;
-    box-shadow: crimson;
+    box-shadow: 0px 3px 8px rgb(100, 100, 100);
 }
 
-.box13{
+.box13 {
     grid-area: live4;
     background-color: burlywood;
-    box-shadow: crimson;
+    box-shadow: 0px 3px 8px rgb(100, 100, 100);
 }
 
-.box14{
+.box15 {
+    grid-area: live5;
+    box-shadow: 0px 3px 8px rgb(100, 100, 100);
+}
+
+.box14 {
     grid-area: footer;
     background-color: darkgreen;
+}
+
+.box10>img {
+    max-height: 5%;
+    max-width: 5%;
 }
