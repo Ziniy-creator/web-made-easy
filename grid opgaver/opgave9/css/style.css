@@ -1,7 +1,14 @@
+body {
+    margin: 0;
+    padding: 0 auto;
+    max-width: 1400px;
+}
+
 section {
+    background-color: #0A192F;
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.66fr;
     grid-template-rows: 0.5fr 5fr 1fr 1fr 1fr;
     grid-template-areas: "header menu menu menu" "hero hero hero hero" "main main . image" "main main . extra" "banner banner banner banner";
 }
@@ -45,17 +52,23 @@ div {
     background-color: cadetblue;
 }
 
+.box8 {}
 
+.box9 {}
 
+.box10 {}
 
-@media screen and (max-width: 450px){
+.box11 {}
 
+.box12 {}
+
+.box13 {}
+
+@media screen and (max-width: 450px) {
     section {
         height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 3fr 2fr 2fr 2fr;
         grid-template-areas: "header" "menu" "hero" "main" "banner" "extra" "image";
-        }
-
-
+    }
 }
