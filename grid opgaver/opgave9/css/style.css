@@ -1,74 +1,360 @@
-body {
+*{
     margin: 0;
-    padding: 0 auto;
-    max-width: 1400px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+html{
+    background-color: #0A192F;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
 }
 
 section {
-    background-color: #0A192F;
+    
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 0.66fr;
-    grid-template-rows: 0.5fr 5fr 1fr 1fr 1fr;
-    grid-template-areas: "header menu menu menu" "hero hero hero hero" "main main . image" "main main . extra" "banner banner banner banner";
+    grid-template-rows: 0.2fr 415px 415px 415px 415px 207.5px 100.2px;
+    grid-template-areas: 
+    "menu menu menu" 
+    "billede1 farve1 damegrid" 
+    "farve2 billede2 damegrid" 
+    "billede3 farve3 damegrid" 
+    "farve4 billede4 damegrid" 
+    "free free damegrid" 
+    "footer footer footer";
 }
 
-div {
-    color: #fff;
-}
-
-.box1 {
-    grid-area: header;
-    background-color: black;
-}
-
-.box2 {
+.menu{
     grid-area: menu;
-    background-color: crimson;
+    background-color: #162B4D;
 }
 
-.box3 {
-    grid-area: main;
-    background-color: darkblue;
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
 
-.box4 {
-    grid-area: hero;
-    background-color: blue;
+#menutext{
+    width: 75%;
+    display: flex;
+    color: white;
+    padding: 20px;
+    font-weight: 450;
 }
 
-.box5 {
-    grid-area: banner;
-    background-color: orange;
+h2{
+    font-weight: 50;
 }
 
-.box6 {
-    grid-area: extra;
-    background-color: chartreuse;
+#logored{
+    color: crimson;
+    font-weight: 50;
 }
 
-.box7 {
-    grid-area: image;
-    background-color: cadetblue;
+ul{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
 }
 
-.box8 {}
+li{
+    list-style: none;
+}
 
-.box9 {}
+a{
+    text-decoration: none;
+    color: white;
+}
 
-.box10 {}
+.billede1{
+    grid-area: billede1;
+    background-image: url("/grid\ opgaver/opgave9/images/post1.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
 
-.box11 {}
+.farve1{
+    grid-area: farve1;
+    background-color: #B71757;
+    color: white;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin-top: 10px;
+}
 
-.box12 {}
+.farve1>h3{
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    display: flex;
+    font-size: 46px;
+}
 
-.box13 {}
 
-@media screen and (max-width: 450px) {
-    section {
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 3fr 2fr 2fr 2fr;
-        grid-template-areas: "header" "menu" "hero" "main" "banner" "extra" "image";
-    }
+.farve1>h4{
+    position: absolute;
+    top: 45px;
+    right: 13px;
+    display: flex;
+}
+
+.farve1>p{
+    font-size: 15px;
+    width: 60%;
+}
+
+
+#damegrid{
+    grid-area: damegrid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    gap: 7px;
+    grid-template-areas: "dame1" "dame2" "." ".";    
+}
+
+.dame1{
+    grid-area: dame1;
+}
+
+.dame2{
+    grid-area: dame2;
+}
+
+.farve2{
+    grid-area: farve2;
+    background-color: #0D7F71;
+    color: white;
+    padding-right: 20px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+
+}
+
+
+.farve2>h3{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    display: flex;
+    font-size: 46px;
+    justify-content: flex-end;
+   
+}
+
+
+.farve2>h4{
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    display: flex;
+    
+}
+
+.farve2>div>p{
+    font-size: 15px;
+    width: 60%;
+  direction:rtl;
+   
+}
+
+.farve2>div>h2{
+    direction:rtl;
+   float: right;
+
+}
+
+.farve2>div{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+}
+
+.billede2{
+    grid-area: billede2;
+    background-image: url("/grid\ opgaver/opgave9/images/post2.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.farve3{
+    grid-area: farve3;
+    background-color: #B1660F;
+    color: white;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+
+}
+
+
+.farve3>h3{
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    display: flex;
+    font-size: 46px;
+}
+
+
+.farve3>h4{
+    position: absolute;
+    top: 45px;
+    right: 13px;
+    display: flex;
+}
+
+.farve3>p{
+    font-size: 15px;
+    width: 60%;
+}
+
+
+
+.billede3{
+    grid-area: billede3;
+    background-image: url("/grid\ opgaver/opgave9/images/post3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.farve4{
+    grid-area: farve4;
+    background-color: #B71757;
+    color: white;
+    padding-right: 20px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+
+}
+
+.billede4{
+    grid-area: billede4;
+    background-image: url("/grid\ opgaver/opgave9/images/post4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.farve4>h3{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    display: flex;
+    font-size: 46px;
+    justify-content: flex-end;
+   
+}
+
+
+.farve4>h4{
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    display: flex;
+    
+}
+
+.farve4>div>p{
+    font-size: 15px;
+    width: 60%;
+  direction:rtl;
+   
+}
+
+.farve4>div>h2{
+    direction:rtl;
+   float: right;
+
+}
+
+.farve4>div{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+}
+
+
+.free{
+    grid-area: free;
+    background-color: #2E95BB;
+    color: white;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+
+}
+
+
+.free>h3{
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    display: flex;
+    font-size: 46px;
+}
+
+
+.free>h4{
+    position: absolute;
+    top: 45px;
+    right: 13px;
+    display: flex;
+}
+
+.free>p{
+    font-size: 15px;
+    width: 60%;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #162B4D;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#footertext{
+    display: flex;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
