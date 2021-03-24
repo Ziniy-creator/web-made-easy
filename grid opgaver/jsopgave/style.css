@@ -1,49 +1,60 @@
 section {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 5fr 1fr 1fr 1fr;
-    grid-template-areas: "header menu menu menu" "hero hero hero hero" "main main . image" "main main . extra" "banner banner banner banner";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "box1 box1 box1" 
+    "box2 box3 box4"
+    "box5 box6 box7"
+    "box8 box9 box10";
+    grid-gap: 25px;
 }
 
 div {
     color: #fff;
 }
 
-.box1 {
-    grid-area: header;
-    background-color: black;
+.box1{
+    grid-area:box1;
 }
 
-.box2 {
-    grid-area: menu;
-    background-color: crimson;
+.box2{
+    grid-area:box2;
 }
 
-.box3 {
-    grid-area: main;
-    background-color: darkblue;
+.box3{
+    grid-area:box3;
 }
 
-.box4 {
-    grid-area: hero;
-    background-color: blue;
+.box4{
+    grid-area:box4;
 }
 
-.box5 {
-    grid-area: banner;
-    background-color: orange;
+.box5{
+    grid-area:box5;
 }
 
-.box6 {
-    grid-area: extra;
-    background-color: chartreuse;
+.box6{
+    grid-area:box6;
 }
 
-.box7 {
-    grid-area: image;
-    background-color: cadetblue;
+.box7{
+    grid-area:box7;
 }
+
+.box8{
+    grid-area:box8;
+}
+
+.box9{
+    grid-area:box9;
+}
+
+.box10{
+    grid-area: box10;
+}
+
 
 
 @media screen and (max-width: 768px){
