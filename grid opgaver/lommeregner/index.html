@@ -5,64 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>opgave7</title>
+    <title>lommeregner</title>
   </head>
 
   <body>
-    <section>
-      <img
-        id="box1"
-        src="https://picsum.photos/seed/picsum01/1920/1080"
-        alt=""
-      />
+    <div class="container">
+      <p>Calculator Random Made using HTML5, CSS3 GRID, and JavaScript</p>
+      <div class="calculator">
+        <div class="calculator__display">0</div>
 
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum02/1920/1080"
-        alt=""
-      />
-
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum03/1920/1080"
-        alt=""
-      />
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum04/1920/1080"
-        alt=""
-      />
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum05/1920/1080"
-        alt=""
-      />
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum06/1920/1080"
-        alt=""
-      />
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum07/1920/1080"
-        alt=""
-      />
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum08/1920/1080"
-        alt=""
-      />
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum09/1920/1080"
-        alt=""
-      />
-      <img
-        class="thumbnails"
-        src="https://picsum.photos/seed/picsum10/1920/1080"
-        alt=""
-      />
-    </section>
+        <div class="calculator__keys">
+          <button class="key--operator" data-action="add">+</button>
+          <button class="key--operator" data-action="subtract">-</button>
+          <button class="key--operator" data-action="multiply">&times;</button>
+          <button class="key--operator" data-action="divide">÷</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>0</button>
+          <button data-action="decimal">.</button>
+          <button data-action="clear">AC</button>
+          <button class="key--equal" data-action="calculate">=</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
