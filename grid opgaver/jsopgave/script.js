@@ -1,7 +1,12 @@
-let box1 = document.getElementById("box1");
+let large = document.getElementById("box1");
+let thumbnails = document.querySelectorAll(".thumbnails");
 
 
-function change(box1){
-    big.setAttribute("src", "https://pixabay.com/da/photos/r%C3%B8d-valmue-valmue-blomstre-5569413/")
+for(let index = 0; index < thumbnails.length; index++){
+    thumbnails[index].addEventListener("click", (picture)=>{
+
+        large.setAttribute("src", picture.target.src);
+
+    });
 
 }
