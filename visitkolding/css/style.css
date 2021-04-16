@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 224, 224);
+}
+
+#top {
+  background-color: #056105;
+  display: flex;
+}
+
+#top nav {
+  margin: auto 20px auto auto;
+}
+
+#top img {
+  width: 30%;
+  padding: 10px;
+}
+
+.dropdownbutton {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  margin: 2px auto 10px 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: rgb(238, 238, 238);
+  min-width: 200px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
+}
+
+.content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown:hover .dropdownbutton {
+  background-color: #3aaa35;
+  color: white;
+}
+
+/*
+
+webshop css
+
+*/
+
+#atBoIKolding {
+  padding: 1%;
+  margin: 2%;
+}
+
+#atBoIKolding h1 {
+  padding-left: 7.5%;
+  font-size: 50px;
+}
+
+#atBoIKolding section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5%;
+  margin: 0.5%;
+  margin-bottom: 5%;
+}
+
+#atBoIKolding section article {
+  border: 5px solid black;
+}
+
+#atBoIKolding section img {
+  border: 5px solid black;
+  max-width: 300px;
+  margin: auto;
+}
+
+#atBoIKolding section article p {
+  padding: 1%;
+}
+
+#koldingSomDesignBy * {
+  margin: 1vw;
+}
+#koldingSomDesignBy h1 {
+  text-align: center;
+  margin-top: 2vw;
+}
+#koldingSomDesignBy section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#koldingSomDesignBy section article {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+#koldingSomDesignBy section article img {
+  width: 100%;
+  margin: 0;
+}
+
+#moreKolding {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#moreKolding h1 {
+  margin: 3%;
+  font-size: 5rem;
+}
+#moreKolding section {
+  display: flex;
+}
+#moreKolding section #vLine {
+  width: 2px;
+  border: 1px solid black;
+}
+#moreKolding section article {
+  margin: 3%;
+}
+#moreKolding section article p,
+#moreKolding section article h2,
+#moreKolding section article h3 {
+  margin: 5%;
+}
+#moreKolding section article p {
+  font-size: 1.5rem;
+}
+#moreKolding section article h2 {
+  font-size: 4rem;
+}
+#moreKolding section article h3 {
+  font-size: 2rem;
+}
+#moreKolding section article img {
+  width: 100%;
+  padding: 3%;
+}
+#moreKolding section article div {
+  display: flex;
+}
+#moreKolding section article div img {
+  flex: 1;
+  width: 50%;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 1230px) {
+  #koldingSomDesignBy section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media only screen and (max-width: 800px) {
+  #moreKolding section {
+    flex-direction: column;
+  }
+  #moreKolding section #vLine {
+    display: none;
+  }
+}
+#webShop #shoppingCartBtn {
+  position: relative;
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+#webShop #shoppingCartBtn div {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 50%;
+  background-color: lightgreen;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+#gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 2%;
+  gap: 2vw 3vw;
+}
+#gridcontainer article {
+  margin: auto;
+  border: 1px solid black;
+  padding: 2vw;
+  width: 100%;
+  height: 100%;
+}
+#gridcontainer article img {
+  width: 100%;
+}
+#gridcontainer article h2 {
+  padding: 2vw 0 1vw 0;
+}
+#gridcontainer article p {
+  padding: 1vw 0;
+}
+#gridcontainer article div {
+  padding: 1vw 0 0 0;
+  display: flex;
+  gap: 1vw;
+}
+#gridcontainer article div button {
+  flex: 1;
+  padding: 1vw;
+  font-size: 0.8rem;
+}
+
+/*
+Webshop css slut
+*/
+
+/* bo i kolding */
+
+#koldingSomDesignBy * {
+  margin: 1vw;
+}
+#koldingSomDesignBy h1 {
+  text-align: center;
+  margin-top: 2vw;
+}
+#koldingSomDesignBy section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#koldingSomDesignBy section article {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+#koldingSomDesignBy section article img {
+  width: 100%;
+  margin: 0;
+}
+
+#moreKolding {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#moreKolding h1 {
+  margin: 3%;
+  font-size: 5rem;
+}
+#moreKolding section {
+  display: flex;
+}
+#moreKolding section #vLine {
+  width: 2px;
+  border: 1px solid black;
+}
+#moreKolding section article {
+  margin: 3%;
+}
+#moreKolding section article p,
+#moreKolding section article h2,
+#moreKolding section article h3 {
+  margin: 5%;
+}
+#moreKolding section article p {
+  font-size: 1.5rem;
+}
+#moreKolding section article h2 {
+  font-size: 4rem;
+}
+#moreKolding section article h3 {
+  font-size: 2rem;
+}
+#moreKolding section article img {
+  width: 100%;
+  padding: 3%;
+}
+#moreKolding section article div {
+  display: flex;
+}
+#moreKolding section article div img {
+  flex: 1;
+  width: 50%;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 1230px) {
+  #koldingSomDesignBy section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media only screen and (max-width: 800px) {
+  #moreKolding section {
+    flex-direction: column;
+  }
+  #moreKolding section #vLine {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#atBoIKolding {
+  padding: 1%;
+  margin: 2%;
+}
+
+#atBoIKolding h1 {
+  padding-left: 7.5%;
+  font-size: 50px;
+}
+
+#atBoIKolding section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5%;
+  margin: 0.5%;
+  margin-bottom: 5%;
+}
+
+#atBoIKolding section article {
+  border: 5px solid black;
+}
+
+#atBoIKolding section img {
+  border: 5px solid black;
+  max-width: 300px;
+  margin: auto;
+}
+
+#atBoIKolding section article p {
+  padding: 1%;
+}
+
+/* bo i kolding slut */
+
+/*
+ serværdigheder start
+
+*/
+
+#overskrift {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  font-size: 40px;
+}
+
+.underoverskrift {
+  text-align: center;
+  margin-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+
+#gade {
+  border: 2px solid black;
+}
+
+#gade p {
+  text-align: center;
+  font-size: 15px;
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.picBox {
+  overflow: hidden;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pics {
+  width: 50%;
+}
+
+.location {
+  width: 80px;
+  height: 20px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: rgb(199, 199, 199);
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.location:hover {
+  cursor: pointer;
+  background-color: rgb(163, 163, 163);
+}
+
+#geohave {
+  flex: 1;
+  border: 2px solid black;
+}
+
+#geohave p {
+  text-align: center;
+  font-size: 15px;
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+#bygninger {
+  border: 2px solid black;
+}
+
+#bygninger p {
+  text-align: center;
+  font-size: 15px;
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+#articleFlex {
+  display: flex;
+  gap: 10px;
+  padding: 0 50px;
+  margin-bottom: 80px;
+}
+
+#articleFlex article {
+  flex: 1;
+}
+
+#buttons {
+  display: flex;
+}
+
+/* 
+ serværdigheder slut 
+ */
+
+/*
+ kolding som design by
+ */
+
+#koldingSomDesignBy * {
+  margin: 1vw;
+}
+#koldingSomDesignBy h1 {
+  text-align: center;
+  margin-top: 2vw;
+}
+#koldingSomDesignBy section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#koldingSomDesignBy section article {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+#koldingSomDesignBy section article img {
+  width: 100%;
+  margin: 0;
+}
+
+#moreKolding {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#moreKolding h1 {
+  margin: 3%;
+  font-size: 5rem;
+}
+#moreKolding section {
+  display: flex;
+}
+#moreKolding section #vLine {
+  width: 2px;
+  border: 1px solid black;
+}
+#moreKolding section article {
+  margin: 3%;
+}
+#moreKolding section article p,
+#moreKolding section article h2,
+#moreKolding section article h3 {
+  margin: 5%;
+}
+#moreKolding section article p {
+  font-size: 1.5rem;
+}
+#moreKolding section article h2 {
+  font-size: 4rem;
+}
+#moreKolding section article h3 {
+  font-size: 2rem;
+}
+#moreKolding section article img {
+  width: 100%;
+  padding: 3%;
+}
+#moreKolding section article div {
+  display: flex;
+}
+#moreKolding section article div img {
+  flex: 1;
+  width: 50%;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 1230px) {
+  #koldingSomDesignBy section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media only screen and (max-width: 800px) {
+  #moreKolding section {
+    flex-direction: column;
+  }
+  #moreKolding section #vLine {
+    display: none;
+  }
+}
+
+/*
+ kolding sol design by slut
+ */
+
+#news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#newsHeadline {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 120px;
+}
+
+.article {
+  width: 700px;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.article p {
+  width: 700px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+
+.article img {
+  width: 100%;
+}
+
+#headline {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#headline h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#others {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.andet {
+  margin: auto;
+  margin: 30px auto 30px auto;
+}
+
+.andet h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.andet p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#footer {
+  padding: 30px;
+  background-color: #056105;
+  margin-top: 100px;
+}
+
+#footer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: block;
+  margin: auto;
+}
