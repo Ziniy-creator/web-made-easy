@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login_kolding</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <div id="Login">
-        <h3 id="login_knap"></h3>
-        <button id="onclick">Log ind</button>
-        <div>
-            <label>Brugernavn</label>
-            <input type="text" placeholder="Dit loging brugernavn" name="" id="">
-            <label>Adgangskode</label>
-            <input type="text" placeholder="Dit adgangskode" name="" id="">
-            <button type="submit">Log ind</button>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section id="top">
+      <header>
+        <img src="../img/logo.png" alt="logo" />
+      </header>
+      <nav>
+        <div class="dropdown">
+          <button class="dropdownbutton">MENU</button>
+          <div class="content">
+            <a href="./index.html">Forsiden</a>
+            <a href="../sever/">Seværdigheder</a>
+            <a href="../at-bo-i-kolding/">Livet i Kolding</a>
+            <a href="../kolding-som-designby/">Arkitekturen i Kolding</a>
+            <a href="../mere-om-kolding/">Mere om Kolding</a>
+            <a href="../webshop/">Shop</a>
+            <a href="../loginside/">Login</a>
+          </div>
         </div>
-        <a href="#">Opret en ny brugernavn?</a>
-        <a href="#">Glemt adgangskode?</a>
+      </nav>
+    </section>
+    <div id="Login">
+      <h3 id="login_knap"></h3>
+
+      <div id="loginsystem">
+        <div id="brugernavn">
+          <label>Brugernavn</label>
+          <input
+            type="text"
+            placeholder="Dit loging brugernavn"
+            name=""
+            id=""
+          />
+        </div>
+        <div id="kodeord">
+          <label>Adgangskode</label>
+          <input type="text" placeholder="Dit adgangskode" name="" id="" />
+        </div>
+        <div id="bottomlogin">
+          <button id="onclick">Log ind</button>
+          <div id="brugerlogin">
+            <a href="#">Opret en ny bruger?</a>
+            <a href="#">Glemt adgangskode?</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

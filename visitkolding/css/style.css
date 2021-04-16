@@ -75,116 +75,6 @@ webshop css
 
 */
 
-#atBoIKolding {
-  padding: 1%;
-  margin: 2%;
-}
-
-#atBoIKolding h1 {
-  padding-left: 7.5%;
-  font-size: 50px;
-}
-
-#atBoIKolding section {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 5%;
-  margin: 0.5%;
-  margin-bottom: 5%;
-}
-
-#atBoIKolding section article {
-  border: 5px solid black;
-}
-
-#atBoIKolding section img {
-  border: 5px solid black;
-  max-width: 300px;
-  margin: auto;
-}
-
-#atBoIKolding section article p {
-  padding: 1%;
-}
-
-#koldingSomDesignBy * {
-  margin: 1vw;
-}
-#koldingSomDesignBy h1 {
-  text-align: center;
-  margin-top: 2vw;
-}
-#koldingSomDesignBy section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#koldingSomDesignBy section article {
-  border: 3px solid rgba(0, 0, 0, 0.1);
-}
-#koldingSomDesignBy section article img {
-  width: 100%;
-  margin: 0;
-}
-
-#moreKolding {
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-#moreKolding h1 {
-  margin: 3%;
-  font-size: 5rem;
-}
-#moreKolding section {
-  display: flex;
-}
-#moreKolding section #vLine {
-  width: 2px;
-  border: 1px solid black;
-}
-#moreKolding section article {
-  margin: 3%;
-}
-#moreKolding section article p,
-#moreKolding section article h2,
-#moreKolding section article h3 {
-  margin: 5%;
-}
-#moreKolding section article p {
-  font-size: 1.5rem;
-}
-#moreKolding section article h2 {
-  font-size: 4rem;
-}
-#moreKolding section article h3 {
-  font-size: 2rem;
-}
-#moreKolding section article img {
-  width: 100%;
-  padding: 3%;
-}
-#moreKolding section article div {
-  display: flex;
-}
-#moreKolding section article div img {
-  flex: 1;
-  width: 50%;
-  padding: 1%;
-}
-
-@media only screen and (max-width: 1230px) {
-  #koldingSomDesignBy section {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-@media only screen and (max-width: 800px) {
-  #moreKolding section {
-    flex-direction: column;
-  }
-  #moreKolding section #vLine {
-    display: none;
-  }
-}
 #webShop #shoppingCartBtn {
   position: relative;
   padding: 20px;
@@ -246,85 +136,6 @@ Webshop css slut
 
 /* bo i kolding */
 
-#koldingSomDesignBy * {
-  margin: 1vw;
-}
-#koldingSomDesignBy h1 {
-  text-align: center;
-  margin-top: 2vw;
-}
-#koldingSomDesignBy section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#koldingSomDesignBy section article {
-  border: 3px solid rgba(0, 0, 0, 0.1);
-}
-#koldingSomDesignBy section article img {
-  width: 100%;
-  margin: 0;
-}
-
-#moreKolding {
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-#moreKolding h1 {
-  margin: 3%;
-  font-size: 5rem;
-}
-#moreKolding section {
-  display: flex;
-}
-#moreKolding section #vLine {
-  width: 2px;
-  border: 1px solid black;
-}
-#moreKolding section article {
-  margin: 3%;
-}
-#moreKolding section article p,
-#moreKolding section article h2,
-#moreKolding section article h3 {
-  margin: 5%;
-}
-#moreKolding section article p {
-  font-size: 1.5rem;
-}
-#moreKolding section article h2 {
-  font-size: 4rem;
-}
-#moreKolding section article h3 {
-  font-size: 2rem;
-}
-#moreKolding section article img {
-  width: 100%;
-  padding: 3%;
-}
-#moreKolding section article div {
-  display: flex;
-}
-#moreKolding section article div img {
-  flex: 1;
-  width: 50%;
-  padding: 1%;
-}
-
-@media only screen and (max-width: 1230px) {
-  #koldingSomDesignBy section {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-@media only screen and (max-width: 800px) {
-  #moreKolding section {
-    flex-direction: column;
-  }
-  #moreKolding section #vLine {
-    display: none;
-  }
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -366,7 +177,7 @@ Webshop css slut
 /* bo i kolding slut */
 
 /*
- serværdigheder start
+ servÃ¦rdigheder start
 
 */
 
@@ -407,6 +218,7 @@ Webshop css slut
 }
 .pics {
   width: 50%;
+  height: auto;
 }
 
 .location {
@@ -470,8 +282,86 @@ Webshop css slut
   display: flex;
 }
 
+/*
+login css
+*/
+#login {
+  max-width: 70%;
+  margin: 35px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#onclick {
+  height: 30px;
+  width: 56.5%;
+}
+
+#brugerlogin {
+  display: flex;
+  width: 195px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#bottomlogin {
+  width: 109px;
+}
+
+#loginsystem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+#brugernavn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#brugernavn > input {
+  margin-left: 15.5px;
+}
+
+#kodeord {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginsystem > label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px 25px;
+  margin: 5px;
+  border: 1px solid #6666;
+  color: #6666;
+}
+
+button {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+/*
+login css slut
+*/
+
 /* 
- serværdigheder slut 
+ servÃ¦rdigheder slut 
  */
 
 /*
