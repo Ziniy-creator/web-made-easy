@@ -97,6 +97,7 @@ h1 > button {
   grid-gap: 15px;
   padding: 0 20px;
   height: auto;
+  background-color: #696969;
 }
 
 #thumbnails1 {
