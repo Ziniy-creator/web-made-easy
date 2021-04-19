@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav nav nav" "st st st st st" "nd nd nd nd nd" "button1 button1 button1 button1 button1" "rd rd rd rd rd";
+  grid-row-gap: 45px;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  background-color: #696969;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100px;
+}
+
+ul {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 70%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+#st {
+  grid-area: st;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-right: 50px;
+  padding-left: 50px;
+  grid-template-rows: 2fr;
+  grid-template-areas: "textSt imgSt";
+}
+
+#textSt {
+  grid-area: textSt;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+#textSt > h1 {
+  width: 80%;
+  font-size: 56px;
+}
+
+h1 > button {
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+
+#imgSt {
+  grid-area: imgSt;
+
+  width: 100%;
+}
+
+#imgSt > img {
+  width: 100%;
+}
+
+#nd {
+  grid-area: nd;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "showcaseImage showcaseImage showcaseImage showcaseImage showcaseImage"
+    "thumbnails1 thumbnails2 thumbnails3 thumbnails4 thumbnails5"
+    "thumbnails6 thumbnails7 thumbnails8 thumbnails9 thumbnails10";
+  grid-gap: 15px;
+  padding: 0 20px;
+  height: auto;
+}
+
+#thumbnails1 {
+  grid-area: thumbnails1;
+}
+
+#thumbnails2 {
+  grid-area: thumbnails2;
+}
+#thumbnails3 {
+  grid-area: thumbnails3;
+}
+#thumbnails4 {
+  grid-area: thumbnails4;
+}
+#thumbnails5 {
+  grid-area: thumbnails5;
+}
+#thumbnails6 {
+  grid-area: thumbnails6;
+}
+#thumbnails7 {
+  grid-area: thumbnails7;
+}
+#thumbnails8 {
+  grid-area: thumbnails8;
+}
+#thumbnails9 {
+  grid-area: thumbnails9;
+}
+#thumbnails10 {
+  grid-area: thumbnails10;
+}
+
+#showcaseImage {
+  grid-area: showcaseImage;
+  width: 100%;
+}
+
+.thumbnails {
+  width: 100%;
+}
+
+#rd {
+  grid-area: rd;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "rdImg textRd";
+  grid-column-gap: 20px;
+}
+
+#textRd {
+  grid-area: textRd;
+  padding: 20px;
+}
+
+#rdImg {
+  grid-area: rdImg;
+  width: 100%;
+  padding: 20px;
+}
+
+p {
+  padding-bottom: 15px;
+}
+
+#button1 {
+  grid-area: button1;
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#button1 > button {
+  background-color: black;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+@media screen and (max-width: 400px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "nav"
+      "nav"
+      "st"
+      "st"
+      "nd"
+      "nd"
+      "nd"
+      "nd"
+      "nd"
+      "nd"
+      "nd"
+      "nd"
+      "button1"
+      "rd"
+      "rd";
+    grid-row-gap: 25px;
+    margin: 0 auto;
+  }
+
+  #nd {
+    grid-area: nd;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "showcaseImage"
+      "thumbnails1"
+      "thumbnails2"
+      "thumbnails3"
+      "thumbnails4"
+      "thumbnails5"
+      "thumbnails6"
+      "thumbnails7"
+      "thumbnails8"
+      "thumbnails9"
+      "thumbnails10";
+    grid-gap: 15px;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  #st {
+    grid-area: st;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "textSt"
+      "imgSt";
+    grid-row-gap: 25px;
+  }
+
+  #rd {
+    grid-area: rd;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "rdImg"
+      "textRd";
+    grid-column-gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+  #logo {
+    margin: 0 auto;
+    display: block;
+    width: 82px;
+  }
+}
