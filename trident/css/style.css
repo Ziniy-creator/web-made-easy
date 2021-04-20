@@ -1,0 +1,242 @@
+@import url(//db.onlinewebfonts.com/c/19007e0c85468fd509414342e0ca9c68?family=Broadway);
+
+@font-face {
+  font-family: "Broadway";
+  src: url("/trident/fonts/Broadway\ Regular/");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #000000;
+  margin-top: 30px;
+}
+
+#logo {
+  background-image: url("/trident/images/logo.png");
+  width: 337px;
+  height: 312px;
+  background-repeat: no-repeat;
+}
+
+html {
+  background-color: #000000;
+  background-image: url(/trident/images/bg.png);
+}
+
+nav {
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+  font-family: "Broadway";
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+hr {
+  background-color: #b6923d;
+  height: 1.5px;
+  width: 97%;
+  margin: 0 auto;
+  color: #b6923d;
+  border: 0;
+}
+
+#topimage {
+  padding-top: 35px;
+}
+
+h4 {
+  color: white;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#top {
+  padding-bottom: 35px;
+}
+
+#events {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+h5 {
+  font-size: 24px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h6 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#events > div {
+  width: 30%;
+  min-width: 300px;
+}
+
+#events > div > p {
+  padding-left: 0 !important;
+}
+
+img {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  align-items: center;
+}
+
+#textwall {
+  width: 412px;
+  height: 451px;
+  background-image: url(/trident/images/textwall.png);
+}
+#nyhedsbrev {
+  width: 550px;
+  height: 340px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#footertop {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#nyhedsbrevbox {
+  background-color: #b6923d;
+  height: 75%;
+  width: 75%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+input {
+  width: 80%;
+  height: 12%;
+}
+input[type="submit"] {
+  margin-top: 10px;
+  background-color: #674f13;
+  border-radius: 8px;
+  color: #fdfdfd;
+  padding: 10px;
+  box-shadow: inset 0px -5px 15px black;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+#nyhedsbrevbox > h2 {
+  font-size: 36px;
+  color: white;
+}
+
+#nyhedsbrevbox > h6 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#footerbottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#facebook,
+#instagram,
+#twitter {
+  height: 49px;
+  width: 49px;
+}
+
+#facebook {
+  background-image: url(/trident/images/Facebook.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 49px;
+  width: 49px;
+}
+#instagram {
+  background-image: url(/trident/images/Twitter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#twitter {
+  background-image: url(/trident/images/Instagram.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+#icons {
+  display: flex;
+}
+
+#socials > p {
+  width: 100%;
+  text-align: end;
+}
+#info {
+  width: 100%;
+}
