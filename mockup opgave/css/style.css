@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+#logo {
+  color: grey;
+  font-weight: bold;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1366px;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr;
+  background-color: aliceblue;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul div {
+  padding-left: 200px;
+  padding-right: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 40px;
+}
+
+ul button {
+  width: 142px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+#headerbox {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+}
+
+#headerbox > div > button {
+  width: 182px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+#featuredproducts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+}
+
+#featuredproducts > div {
+  padding-top: 30px;
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pimg1,
+#pimg2,
+#pimg3 {
+  height: 234px;
+  width: 344px;
+  background-image: url("https://picsum.photos/1920/1080");
+}
+
+#featuredproducts h6 {
+  font-size: 24px;
+  text-align: center;
+}
+
+#featuredproducts p {
+  font-size: 18px;
+  text-align: center;
+}
+
+#featuredproducts button {
+  width: 182px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border: none;
+  max-width: 182px;
+}
+
+#spotlight {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#spotlight h6 {
+  padding: 20px;
+  font-size: 32px;
+}
+
+#spotlight div {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#spotlight p {
+  padding: 20px;
+  font-size: 16px;
+}
+
+#featuredsolutions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+}
+
+#i {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.solutions {
+  padding-top: 30px;
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#feature {
+  text-align: center;
+  font-size: 32px;
+  padding: 40px;
+}
+
+.solutions button {
+  width: 182px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border: none;
+  max-width: 182px;
+}
+
+.solutions h6 {
+  font-size: 24px;
+}
+
+.solutions p {
+  text-align: center;
+}
+
+hr {
+  height: 1px;
+  background-color: grey;
+  border: 0;
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#abovenews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+#abovenews h6 {
+  padding: 20px;
+  font-size: 32px;
+}
+
+#bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: darkgrey;
+}
+
+#bottom2 {
+  width: 40%;
+  display: flex;
+}
+
+#bottom1 {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#bottom1 h6 {
+  font-size: 32px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#bottom1 p {
+  padding: 20px;
+  font-size: 18px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#socials div {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+#socials {
+  display: flex;
+
+  margin: 0 auto;
+  width: 70%;
+  padding: 12px;
+}
+
+#bottom2 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  color: grey;
+  padding: 20px;
+}
+
+#bottom2 ul li {
+  padding: 0;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+#abovenews button {
+  width: 182px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border: none;
+  max-width: 182px;
+}
+
+#abovenews p {
+  padding: 20px;
+  font-size: 18px;
+}
+
+#newsletter h6 {
+  font-size: 32px;
+}
+
+#newsletter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+input {
+  padding: 15px;
+}
+
+#newsletter button {
+  width: 145px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  max-width: 182px;
+}
+
+#newsletter p {
+  padding: 20px;
+  font-size: 18px;
+}
+#newssub {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 240px;
+  background-color: lightgrey;
+}
+
+#therms {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
