@@ -1,0 +1,58 @@
+#contact {
+  display: flex;
+  width: 898px;
+}
+
+#getintouch {
+  display: flex;
+  padding: 20px;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+#getintouch div {
+  display: flex;
+  width: 74%;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+}
+
+i {
+  padding-right: 10px;
+}
+#nameemail {
+  justify-content: space-between;
+  display: flex;
+  width: 75%;
+}
+input {
+  height: 48px;
+  width: 156px;
+}
+#map {
+  width: 448px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+}
+
+textarea {
+  width: 328px;
+  height: 150px;
+}
+#close {
+  position: absolute;
+  margin-left: 400px;
+  margin-bottom: 484px;
+}
+
+button {
+  width: 328px;
+  background-color: black;
+  color: white;
+  height: 48px;
+}
