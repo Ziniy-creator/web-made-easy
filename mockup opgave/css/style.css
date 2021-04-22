@@ -90,7 +90,7 @@ h1 {
 #featuredproducts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px;
+  grid-template-rows: 1fr;
 }
 
 #featuredproducts > div {
@@ -108,6 +108,7 @@ h1 {
 #pimg3 {
   height: 234px;
   width: 344px;
+  background-size: cover;
   background-image: url("https://picsum.photos/1920/1080");
 }
 
@@ -275,7 +276,6 @@ hr {
 
 #socials {
   display: flex;
-
   margin: 0 auto;
   width: 70%;
   padding: 12px;
@@ -360,4 +360,31 @@ footer {
   display: flex;
   width: 300px;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    padding: 10px 20px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 400px) {
 }
