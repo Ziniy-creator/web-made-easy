@@ -18,6 +18,9 @@ body {
 .wrapper {
   width: 100%;
   max-width: 1081px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #grid-container {
@@ -100,7 +103,6 @@ h1 {
 
 #featuredproducts > div {
   padding-top: 30px;
-  max-width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -113,8 +115,6 @@ h1 {
 #pimg3 {
   height: 234px;
   width: 344px;
-  background-size: cover;
-  background-image: url("https://picsum.photos/1920/1080");
 }
 
 #featuredproducts h6 {
@@ -390,15 +390,22 @@ footer {
     cursor: pointer;
   }
 
-  .wrapper {
-    max-width: 768px;
+  #featuredproducts {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
   }
-}
+  #featureproducts div {
+    flex-grow: 1;
+    min-width: 200px;
+  }
 
-@media screen and (max-width: 400px) {
-  .wrapper {
-    max-width: 400px;
+  #featuredsolutions {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+  }
+  .solutions {
+    width: 300px;
   }
 }
