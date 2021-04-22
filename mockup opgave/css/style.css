@@ -15,6 +15,11 @@ body {
   font-weight: bold;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 1081px;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -384,7 +389,16 @@ footer {
   a:hover {
     cursor: pointer;
   }
+
+  .wrapper {
+    max-width: 768px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .wrapper {
+    max-width: 400px;
+    width: 100%;
+  }
 }
