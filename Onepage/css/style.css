@@ -508,3 +508,47 @@ a:hover {
 img:hover {
   opacity: 0.3;
 }
+
+@media screen and (max-width: 500px) {
+  #news {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "newstop" "newstop" "newstop" "news1" "news2" "news3";
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    row-gap: 15px;
+  }
+
+  #team {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "text" "text" "text" "text" "timg1" "timg2" "timg3" "timg4";
+  }
+
+  #worksbottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  #features {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 40px 0;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bottom2 {
+    flex-direction: column;
+  }
+}
