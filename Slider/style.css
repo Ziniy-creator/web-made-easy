@@ -1,0 +1,38 @@
+section {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  display: block;
+  background-color: black;
+}
+
+#btns {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#box1 {
+  display: block;
+}
+#slider img.show {
+  display: block;
+}
+
+#slider img.hide {
+  display: none;
+}
