@@ -1,22 +1,27 @@
-const images = document.querySelectorAll("#slider img");
-const btn = document.querySelectorAll("#btns a");
+let slideIndex = 1;
+showSlideShow(slideIndex);
 
-for(let index = 0; index < btn.length; index++){   
-    
-    
-
-    btn[index].addEventListener("click", (event)=>{
-
-    for(let index2 = 0; index2 < images.length; index2++){
-        console.log(index);
-    if(images.index2 === btn.index2){
-        images[index2].classList.add("show");
-    }
-    else{
-        images[index2].classList.add("hide");
-    }
+// Previous control controls
+function plusSlides(n) {
+  showSlideShow(slideIndex += n);
 }
-              
-    });
 
+// Next control controls
+function currentSlide(n) {
+  showSlideShow(slideIndex = n);
+}
+
+function showSlideShow(n) {
+  let i;
+  let slides = document.getElementsByClassName("thumbnails");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
 }

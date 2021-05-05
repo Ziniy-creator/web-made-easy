@@ -248,3 +248,7 @@ input[type="submit"] {
 #info {
   width: 100%;
 }
+
+input[type="Email"]:focus {
+  border: 2px solid red;
+}
