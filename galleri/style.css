@@ -1,0 +1,26 @@
+section {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr repeat("auto", 250px);
+  grid-gap: 25px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div {
+  color: #fff;
+}
+
+#box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+img {
+  width: 100%;
+}
+
+img:hover {
+  transform: rotate(20deg);
+}
