@@ -12,6 +12,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 100vh;
 }
 #headerbox {
   margin: 0 auto;
