@@ -1,0 +1,224 @@
+text css
+
+h1{
+    margin-top:0;
+    margin-bottom: 0.3rem;
+}
+
+h2{
+  margin-top:0;
+  margin-bottom: 0.3rem;
+}
+  
+  h3{
+  margin-top:0;
+  margin-bottom: 0.3rem;  
+}
+
+  h4{
+  margin-top:0;
+  margin-bottom: 0.3rem;
+}
+
+  h5{
+  margin-top:0;
+  margin-bottom: 0.3rem;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+}
+
+h1, .h1 {
+  font-size: 2.2rem;
+}
+
+h2, .h2 {
+  font-size: 1.7rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+link css
+
+a {
+    color: blue;
+    text-decoration: none;
+    background-color: rgba(128,128,0, 0.7);
+  }
+  
+  a:hover {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  a:not([href]):not([class]) {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  
+  a:not([href]):not([class]):hover {
+    color: var(--blue);
+    text-decoration: none;
+  }
+  
+
+
+  rest css
+
+  header nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    text-rendering: auto;
+    -moz-text-size-adjust: inherit;
+    text-transform: inherit;
+    -moz-text-transform: inherit;
+}
+
+header .logo{
+    height: auto;
+    width: auto; /* Logo Sizing */
+}
+
+
+header nav ul li:active a:active{
+
+    background-color: rgba(128,128,0, 0.7);
+    color: rgba(128,0,0, 0.7);
+
+}
+
+header nav ul li:focus a:focus{
+
+    background-color: rgba(128,128,0, 0.7);
+    color: rgba(128,0,0, 0.7);
+
+}
+
+header nav ul li:focus a:active{
+
+    background-color: rgba(128,128,0, 0.7);
+    color: rgba(128,0,0, 0.7);
+
+}
+
+header nav ul li:focus-visible a:active{
+
+    background-color: rgba(128,128,0, 0.7);
+    color: rgba(128,0,0, 0.7);
+
+}
+
+header nav ul li:focus-within a:focus-visible{
+
+    background-color: rgba(128,128,0, 0.7);
+    color: rgba(128,0,0, 0.7);
+
+}
+
+header nav ul li:focus-visible a:focus-within{
+
+    background-color: rgba(128,128,0, 0.7);
+    color: rgba(128,0,0, 0.7);
+
+}
+
+
+header nav ul li:hover{
+    background-color: rgba(128,128,0, 0.7);
+}
+
+
+
+header nav ul li a:hover{
+    color: rgba(128,0,0, 0.7);	
+}
+
+a:active{
+    color: rgba(128,0,0, 0.7);
+}
+
+li:focus{
+    color: rgba(128,0,0, 0.7);
+    background-color: rgba(128,128,0, 0.7);
+}
+
+li a:focus{
+    color: rgba(128,0,0, 0.7);
+    background-color: rgba(128,128,0, 0.7);
+}
+
+li a:active{
+    color:rgba(128,0,0, 0.7);
+    background-color: rgba(128,128,0, 0.7);
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+section:nth-child(::-webkit-meter-even-less-good-value){
+    background-color: whitesmoke;
+    color: #666666;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section:nth-child(::-webkit-meter-optimum-value){
+    background-color: white;
+    color: #666666;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article{
+    width: 25%;
+    max-width: 33.334%;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: start;
+}
+
+section article{
+    width: 25%;
+    max-width: 33.334%;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: start;
+}
+
