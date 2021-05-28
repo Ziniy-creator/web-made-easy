@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #212429;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -5;
+  height: 100px;
+}
+
+html {
+  background-color: #212429;
+}
+
+body {
+  max-width: 1590px;
+  width: 100%;
+  margin: 0 auto;
+}
+#logo {
+  position: relative;
+}
+#logotext {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  left: 50px;
+}
+
+#logobg {
+  position: absolute;
+  top: 0;
+}
+
+ul {
+  display: flex;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+#svgimghead {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+}
+
+p {
+  color: #d1e0fb;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+#innerheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#innerheader #left {
+  max-width: 445px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#innerheader #left div {
+  display: flex;
+}
+
+#innerheader #left div button {
+  width: 167px;
+  height: 48px;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 15px;
+}
+
+#innerheader #left div button:nth-child(1) {
+  background-color: #377dff;
+}
+
+#innerheader #left div button:nth-child(2) {
+  background-color: #212429;
+}
+
+#innerheader #left p {
+  padding: 25px 0;
+}
+#services {
+  max-width: 884px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#services article {
+  max-width: 245px;
+  height: 100%;
+  max-height: 284px;
+  width: 100%;
+  background-color: #2d2f33;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#services article p {
+  padding: 10px 0;
+}
+
+#first {
+  max-width: 1178px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+#first h2 {
+  width: 100%;
+  text-align: center;
+  min-width: 100%;
+  color: #fff;
+}
+
+#first p {
+  width: 100%;
+  text-align: center;
+  min-width: 100%;
+  padding: 30px 0;
+}
+
+#first article {
+  max-width: 356px;
+  width: 100%;
+}
+
+#first article div {
+  display: flex;
+}
+
+#first article div h3 {
+  padding: 0 10px;
+}
+
+#first article p {
+  padding: 0;
+  padding-left: 50px;
+  width: 65%;
+  max-width: 282.5px !important;
+  min-width: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
