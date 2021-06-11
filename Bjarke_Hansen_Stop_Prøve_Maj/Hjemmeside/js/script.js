@@ -1,4 +1,4 @@
-//Gem imgs med classe slide og knappermed classe btn
+//Gem img tags med class slide og knapper med class btn
 let slide = document.querySelectorAll(".slide");
 let btn = document.querySelectorAll(".btn");
 
@@ -7,10 +7,10 @@ for (let index = 0; index < slide.length; index++) {
         // Kalder picture event
         console.log(event);
         document.querySelector(".active").classList.remove("active");
-        slide[index].classList.add("active");
+        slide[index].classList.toggle("active");
         //tilføjer active til knapper
         document.querySelector(".btna").classList.remove("btna");
-        btn[index].classList.add("btna");
+        btn[index].classList.toggle("btna");
 
     });
 }
