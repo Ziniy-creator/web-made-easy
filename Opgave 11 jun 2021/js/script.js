@@ -42,3 +42,9 @@ function formValidate(){
 
 
 }
+
+function menudropdown(){
+
+    document.getElementById("dropdownmenu").classList.toggle("activedrop");
+    
+}

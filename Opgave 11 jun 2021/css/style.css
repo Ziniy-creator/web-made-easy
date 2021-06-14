@@ -19,6 +19,10 @@ nav {
   height: auto;
 }
 
+i.fas.fa-bars{
+display: none;
+}
+
 ul {
   display: flex;
   min-width: 200px;
@@ -316,4 +320,69 @@ input{
 
 #footerbottom{
   background-color: #EBEBEB;
+}
+
+
+@media screen and (max-width: 500px){
+
+  #imenu {
+    display: block;
+   cursor: pointer;
+   text-align: center;
+    font-size: 40px;
+    color: red
+  }
+
+
+  #dropdownmenu{
+    display: none;
+  }
+
+  ul#dropdownmenu.activedrop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav{
+    flex-direction: column;
+  }
+
+  #contactbtn{
+    margin-top: 20px;
+  }
+  header article h1{
+    width: 100%;
+  }
+
+  #footermenu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  #mockup{
+    width: 40%;
+  }
+
+  #footermenu{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  footer{
+    padding: 40px 0;
+ 
+  }
+
+  #footerbottom{
+    text-align: center;
+  }
+
+
+
 }
