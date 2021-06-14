@@ -18,24 +18,24 @@ for (let index = 0; index < panel.length; index++) {
 
 function formValidate(){
 
+ 
+if (document.getElementById("name").value.length > 5){
+      
+      console.log("navn er valideret");
 
-    if (document.getElementById("name").value.length > 5){
-      
-      
-    if ( document.getElementById("email").value.length > 7){
+    if (document.getElementById("email").value.length > 7 && document.getElementById("email").value.includes("@")){
     
         console.log("email er valideret");
        
     }
       
-        console.log("navn er valideret");
-        
+       
         return true;
     }
 
     else{
     
-        console.log("falsk")
+        console.log("intet er valideret")
         return false;
     
         }   
