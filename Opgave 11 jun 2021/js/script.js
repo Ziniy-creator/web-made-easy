@@ -19,29 +19,27 @@ for (let index = 0; index < panel.length; index++) {
 function formValidate(){
 
  
-if (document.getElementById("name").value.length > 5){
+if (!(document.getElementById("name").value.length > 5)){
       
-      console.log("navn er valideret");
+      console.log("navn er ikke valideret");
+    }
 
-    if (document.getElementById("email").value.length > 7 && document.getElementById("email").value.includes("@")){
+    if (!(document.getElementById("email").value.length > 7 && 
+        document.getElementById("email").value.includes("@") &&
+        document.getElementById("email").value.includes("."))){
     
-        console.log("email er valideret");
-       
+        console.log("email er ikke valideret");
     }
       
-       
-        return true;
-    }
 
     else{
     
-        console.log("intet er valideret")
-        return false;
+        console.log("alt er valideret")
+        return true;
     
         }   
-
-
 }
+
 
 function menudropdown(){
 
