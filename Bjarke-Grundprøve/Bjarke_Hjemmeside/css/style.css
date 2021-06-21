@@ -1,0 +1,529 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+#topheader {
+  width: 100%;
+  position: relative;
+  background-color: rgba(67, 80, 97, 0.3);
+  height: 100vh;
+}
+
+nav {
+  width: 100vw;
+  max-width: 1081px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  padding-bottom: 10px;
+  list-style: none;
+  font-size: 1rem;
+}
+
+li:hover {
+  border-bottom: 3px solid #e7be7e;
+}
+
+#logo span {
+  display: none;
+  margin: 0 auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#contactheaderbtn {
+  font-weight: bold;
+  color: #000;
+  max-height: 40px;
+  max-width: 80px;
+  padding: 10px 30px;
+  background-color: #e7be7e;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header #headerbg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+}
+
+#logo {
+  height: 40px;
+  width: 200px;
+}
+
+header article {
+  width: 100%;
+  max-width: 1081px;
+  height: 50vh;
+  margin: 0 auto;
+  text-align: center;
+
+  margin-top: 20vh;
+}
+
+header article h1 {
+  width: 100%;
+  font-family: "Noto Sans";
+  font-size: 56px;
+  color: #fff;
+  padding: 40px 0;
+}
+
+header article p {
+  width: 100%;
+  font-family: "Noto Sans";
+  color: #fff;
+  font-size: 1rem;
+}
+
+#uddannelsen {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1081px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "articletext articletext firstimgtop secondimgtop"
+    "articletext articletext imgbottom imgbottom";
+  margin: 0 auto;
+  gap: 25px;
+  height: 50vh;
+  padding: 60px 0;
+}
+
+#uddannelsen article {
+  grid-area: articletext;
+  width: 94%;
+  margin-top: 40px;
+}
+
+#uddannelsen img:nth-last-child(3) {
+  grid-area: firstimgtop;
+  width: 100%;
+}
+
+#uddannelsen img:nth-last-child(2) {
+  grid-area: secondimgtop;
+  width: 100%;
+}
+
+#uddannelsen img:nth-last-child(1) {
+  grid-area: imgbottom;
+  width: 100%;
+}
+#uddannelsen article p:nth-last-child(3) {
+  font-weight: bold;
+}
+
+#uddannelsen article p {
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  padding: 20px 0;
+  width: 84%;
+  color: #737373;
+}
+
+#uddannelsen article h2 {
+  font-size: 35px;
+  font-family: "Noto Sans";
+}
+
+#skole {
+  background-color: #e5dfd7;
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+#skole header {
+  text-align: center;
+  font-family: "Noto Sans";
+
+  max-width: 1081px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#skole header h2 {
+  padding-bottom: 5vh;
+  padding-top: 4vh;
+}
+
+#skole header p {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#skole article {
+  max-width: 1081px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#skole article header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-bottom: 2px solid #3e3e3e;
+}
+
+#skole article header h4 {
+  color: #3e3e3e;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+#skole article header button {
+  margin-right: 30px;
+  background-color: #fff;
+  color: #3e3e3e;
+  border: 2px solid #3e3e3e;
+  font-size: 1rem;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+#skole article header button::after {
+  content: "Vis mere";
+}
+
+#skole article .panel p {
+  width: 88%;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.8rem;
+  padding: 10px;
+}
+
+#skole article .panel h5 {
+  font-weight: bold;
+  color: white;
+  width: 88%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#skole article .panel p:nth-child(odd) {
+  padding-bottom: 20px;
+}
+
+/* Active panel styles*/
+
+#skole article.panel.active .hidden {
+  display: block;
+}
+
+#skole article.panel.active header {
+  border-bottom: 2px solid #e7be7e;
+}
+
+#skole article.panel.active {
+  background-color: #435061;
+}
+
+#skole article.panel.active header h4 {
+  color: #e7be7e;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+#skole article.panel.active header button {
+  margin-right: 30px;
+  background-color: #e7be7e;
+  color: #000;
+  border: 2px solid white;
+  font-size: 1rem;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+#skole article.panel.active header button::after {
+  content: "Vis Mindre";
+}
+#skole article.panel.active p {
+  width: 88%;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.8rem;
+  padding: 10px;
+}
+
+#skole article.panel.active h5 {
+  font-weight: bold;
+  color: white;
+  width: 88%;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+#skole article.panel.active p:nth-child(odd) {
+  padding-bottom: 20px;
+}
+
+#skole article.panel.active .hidden p ul li {
+  list-style-type: circle;
+  color: #fff;
+  display: block;
+}
+
+ul.insidepanellist {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul.insidepanellist li {
+  list-style: circle;
+  border: none;
+  color: #fff;
+  margin: 0 auto;
+
+  flex-direction: column;
+}
+
+ul.insidepanellist li a {
+  color: white;
+}
+
+#explorehansenberg {
+  background-color: #435061;
+  color: white;
+}
+
+#explorehansenberg header h2 {
+  text-align: center;
+  padding-top: 40px;
+  max-width: 1081px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#explorehansenberg article {
+  max-width: 1081px;
+  width: 100%;
+  column-gap: 20px;
+  column-width: 300px;
+  column-count: 2;
+  margin: 0 auto;
+  padding: 10px;
+}
+#explorehansenberg article h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+#explorehansenberg article p {
+  padding: 20px 0;
+}
+
+#apply {
+  background-color: #e7be7e;
+  width: 100%;
+}
+#apply header {
+  padding-top: 40px;
+  max-width: 1081px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#apply header h2 {
+  padding: 40px;
+  color: #435061;
+  font-size: 35px;
+}
+
+#apply header p {
+  color: #435061;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 40px;
+}
+
+#apply form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1081px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#apply form input {
+  width: 48%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid #3e3e3e;
+}
+
+#apply form input::placeholder {
+  padding: 10px;
+}
+
+#apply form textarea {
+  width: 100%;
+  height: 250px;
+  border: 2px solid #3e3e3e;
+}
+
+#apply form input[type="button"] {
+  color: #fff;
+  width: 100%;
+  background-color: #3e3e3e;
+  margin-top: 30px;
+  font-weight: bold;
+}
+#apply {
+  padding-bottom: 60px;
+}
+
+footer {
+  width: 100%;
+  background-color: #e5dfd7;
+}
+
+#footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1081px;
+  background-color: #e5dfd7;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 840px) {
+  nav ul {
+    flex-direction: column;
+  }
+  #contactheaderbtn {
+    margin: auto;
+  }
+  #logo {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #explorehansenberg article {
+    width: 80%;
+  }
+  #apply form {
+    width: 80%;
+  }
+  footer #footercontainer {
+    width: 80%;
+  }
+
+  header article h1 {
+    font-size: 2rem;
+  }
+
+  #uddannelsen article h2 {
+    font-size: 1.6rem;
+  }
+
+  #skole {
+    margin-top: 120vh;
+  }
+
+  #topheader {
+    height: 50vh;
+  }
+  header #headerbg {
+    height: 50vh;
+  }
+  header article {
+    margin-top: -38px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  header article h1 {
+    padding: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    display: none;
+    margin: 0;
+  }
+  #logo span {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  #contactheaderbtn {
+    margin-top: 40px;
+  }
+  #uddannelsen {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "articletext"
+      "firstimgtop"
+      "secondimgtop"
+      "imgbottom";
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #dropdownmenu.activedrop {
+    display: flex;
+    margin: 30px 0;
+  }
+}
