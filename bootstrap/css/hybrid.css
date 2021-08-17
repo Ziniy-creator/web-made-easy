@@ -1,0 +1,47 @@
+* {
+  font-family: "Raleway" !important;
+}
+
+a .navbar-brand {
+  font-weight: bold !important;
+}
+
+body {
+  font-weight: bold !important;
+}
+
+.navbar-brand {
+  font-weight: bold !important;
+}
+
+.navbar-light .navbar-brand {
+  font-weight: bold !important;
+}
+
+.navbar-nav ul li a {
+  font-weight: bold !important;
+  font-family: "Raleway" !important;
+}
+
+.nav-link {
+  font-weight: bold !important;
+  font-family: "Raleway" !important;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold !important;
+  font-family: "Raleway" !important;
+}
+
+#brandid {
+  font-weight: bold !important;
+  font-family: "Raleway" !important;
+}
+
+.navbar.navbar-inverse .navbar-brand {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.navbar.navbar-inverse .navbar-nav > li {
+  font-weight: bold;
+}

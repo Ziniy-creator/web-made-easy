@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+#cover {
+  background: #222 url("https://picsum.photos/id/1019/1920/1080.jpg") center
+    center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#cover-caption {
+  width: 100%;
+}
+
+.section-content {
+  padding: 5rem 0;
+}
+
+#about {
+  background: url("https://picsum.photos/id/1011/1920/1080.jpg") center center
+    no-repeat;
+  background-size: cover;
+}
+
+.about-text {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1.875rem;
+}
+
+#footer-main {
+  background: #222;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2.5rem 0;
+}
+
+#footer-main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#footer-main .container .col-sm-3:nth-last-child(1) {
+  min-width: 100%;
+  text-align: center;
+}
+
+/*
+#news .section-content .container .row .col-sm-12 .card-columns {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+}
+*/
+
+.card-columns .card {
+  margin-bottom: 1.5em;
+}
